@@ -43,6 +43,7 @@
         };
 
         $scope.start = function () {
+            window.plugins.insomnia.keepAwake();
             $scope.startTime = new Date();
             $scope.tick();
         };
@@ -52,6 +53,8 @@
             $scope.minutes = 0;
             $scope.seconds = 0;
             $scope.millis = 0;
+
+            window.plugins.insomnia.allowSleepAgain();
         };
 
         $scope.tick = function () {
