@@ -63,6 +63,7 @@
     <Content Include="www\lib\jquery\jquery.min.js" />
     <Content Include="www\res\icon\ios\icon-57.png" />
     <Content Include="www\res\icon\ios\icon-72.png" />
+    <Content Include="www\splash.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="www\lib\fonts\glyphicons-halflings-regular.eot" />

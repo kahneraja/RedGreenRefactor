@@ -40,5 +40,8 @@
     <icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
 
     <gap:plugin name="nl.x-services.plugins.insomnia" />
+  
+    <gap:splash src="splash.png" />
+    <gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />
 
 </widget>

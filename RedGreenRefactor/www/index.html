@@ -14,6 +14,13 @@
     <script src="./app/app.js"></script>
     <script src="./app/controllers/home.js"></script>
     <script src="./app/filters/fixedLengthNumber.js"></script>
+
+    <script>
+        function onDeviceReady() {
+            new FastClick(document.body);
+        }
+
+    </script>
 </head>
 <body>
     <div ng-controller="HomeController" class="maxHeight">
