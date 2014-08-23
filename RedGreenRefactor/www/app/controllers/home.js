@@ -9,6 +9,8 @@
         $scope.seconds = 0;
         $scope.millis = 0;
 
+        $scope.times = [];
+
         $scope.title = 'Title!';
 
         $scope.next = function () {
@@ -43,7 +45,9 @@
         };
 
         $scope.start = function () {
-            window.plugins.insomnia.keepAwake();
+            if (window.plugins !== undefined)
+                window.plugins.insomnia.keepAwake();
+
             $scope.startTime = new Date();
             $scope.tick();
         };
@@ -54,7 +58,19 @@
             $scope.seconds = 0;
             $scope.millis = 0;
 
-            window.plugins.insomnia.allowSleepAgain();
+            var time = angular.element('.stopwatch').html();
+
+            $scope.addTime(time);
+
+            if (window.plugins !== undefined)
+                window.plugins.insomnia.allowSleepAgain();
+        };
+
+        $scope.addTime = function (time) {
+            $scope.times.push(time);
+
+            if ($scope.times.length > 10)
+                $scope.times.shift();
         };
 
         $scope.tick = function () {
@@ -80,7 +96,7 @@
                 $scope.milliseconds %= 1000;
 
             if ($scope.canvasClass !== 'canvasWhite')
-                $timeout($scope.tick, 25);
+                $timeout($scope.tick, 10);
             else
                 $scope.stop();
         };

@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var app = angular.module("RedGreenRefactor", ['ngTouch']);
+    var app = angular.module("RedGreenRefactor", []);
 
-
+    var f = new FastClick(document.body);
 }());

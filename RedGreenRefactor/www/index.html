@@ -6,7 +6,7 @@
     <script type="text/javascript" src="phonegap.js"></script>
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/angular/angular.js"></script>
-    <script src="./lib/angular/angular-touch.js"></script>
+    <script src="./lib/fastclick/fastclick.js"></script>
     <script src="./lib/bootstrap/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./lib/bootstrap/bootswatch.simplex.css" />
@@ -16,9 +16,16 @@
     <script src="./app/filters/fixedLengthNumber.js"></script>
 </head>
 <body>
-    <div ng-controller="HomeController">
-        <div class="{{canvasClass}}" ng-click="next()">
-            <span class="stopwatch">{{hours | fixedLengthNumber : 2}}:{{minutes | fixedLengthNumber : 2}}:{{seconds | fixedLengthNumber : 2}}:{{millis | fixedLengthNumber : 3}}</span>
+    <div ng-controller="HomeController" class="maxHeight">
+        <div class="{{canvasClass}} maxHeight" ng-click="next()">
+            <div class="infoPanel">
+                <ul>
+                    <li class="animate-repeat" ng-repeat="time in times">
+                        {{time}}
+                    </li>
+                </ul>
+                <span class="stopwatch">{{hours | fixedLengthNumber : 2}}:{{minutes | fixedLengthNumber : 2}}:{{seconds | fixedLengthNumber : 2}}:{{millis | fixedLengthNumber : 3}}</span>
+            </div>
         </div>
     </div>
 </body>

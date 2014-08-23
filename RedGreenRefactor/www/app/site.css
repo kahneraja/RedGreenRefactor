@@ -2,7 +2,7 @@
     height: 100%;
 }
 
-div {
+.maxHeight {
     height: 100%;
 }
 
@@ -21,12 +21,15 @@ div {
     background-color: #029acf;
 }
 
-.stopwatch {
-    color: white;
+.infoPanel {
     position: absolute;
     bottom: 0;
-    right: 0;
-    padding: 20px;
+    right: 0;   
+    padding: 20px;     
+}
+
+.stopwatch {
+    color: white;
     font-size: 24px;
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
@@ -35,4 +38,13 @@ div {
 
 .canvasWhite .stopwatch {
     color: black;
+}
+
+li {
+    list-style-type: none;
+    text-align: right;
+    padding: 5px;
+    color: white;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }

@@ -53,12 +53,12 @@
     <Content Include="www\icon.png" />
     <Content Include="www\img\logo.png" />
     <Content Include="www\index.html" />
-    <Content Include="www\lib\angular\angular-touch.js" />
     <Content Include="www\lib\angular\angular.js" />
     <Content Include="www\lib\bootstrap\bootstrap.min.css" />
     <Content Include="www\lib\bootstrap\bootstrap.min.js" />
     <Content Include="www\lib\bootstrap\bootswatch.simplex.css" />
     <Content Include="www\lib\bootstrap\ui-bootstrap-tpls-0.10.0.js" />
+    <Content Include="www\lib\fastclick\fastclick.js" />
     <Content Include="www\lib\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="www\lib\jquery\jquery.min.js" />
     <Content Include="www\res\icon\ios\icon-57.png" />
