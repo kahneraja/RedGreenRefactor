@@ -1,5 +1,7 @@
 (function () {
     'use strict';
-    var app = angular.module("RedGreenRefactor", []);
-    new FastClick(document.body);
+    var app = angular.module("RedGreenRefactor", []).
+      run(function () {
+          FastClick.attach(document.body);
+      });
 }());
