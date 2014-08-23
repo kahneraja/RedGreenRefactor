@@ -58,7 +58,9 @@
             $scope.seconds = 0;
             $scope.millis = 0;
 
-            var time = angular.element('.stopwatch').html();
+            var time = {};
+
+            time.period = angular.element('.stopwatch').html();
 
             $scope.addTime(time);
 
@@ -69,7 +71,7 @@
         $scope.addTime = function (time) {
             $scope.times.push(time);
 
-            if ($scope.times.length > 10)
+            if ($scope.times.length > 1)
                 $scope.times.shift();
         };
 
@@ -96,7 +98,7 @@
                 $scope.milliseconds %= 1000;
 
             if ($scope.canvasClass !== 'canvasWhite')
-                $timeout($scope.tick, 10);
+                $timeout($scope.tick, 1000);
             else
                 $scope.stop();
         };

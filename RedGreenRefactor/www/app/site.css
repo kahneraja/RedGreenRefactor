@@ -2,12 +2,31 @@
     height: 100%;
 }
 
+.guidancePanel {
+    position: absolute;
+    padding: 10px;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
 .maxHeight {
     height: 100%;
 }
 
 .canvasWhite {
+    color: black;
 }
+
+    .canvasWhite p {
+        color: black;
+    }
+
+    .canvasWhite h1 {
+        color: black;
+    }
 
 .canvasRed {
     background-color: #d9230f;
@@ -24,8 +43,8 @@
 .infoPanel {
     position: absolute;
     bottom: 0;
-    right: 0;   
-    padding: 20px;     
+    right: 0;
+    padding: 20px;
 }
 
 .stopwatch {
