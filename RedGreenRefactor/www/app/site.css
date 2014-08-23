@@ -1,0 +1,38 @@
+﻿body, html {
+    height: 100%;
+}
+
+div {
+    height: 100%;
+}
+
+.canvasWhite {
+}
+
+.canvasRed {
+    background-color: #d9230f;
+}
+
+.canvasGreen {
+    background-color: #469408;
+}
+
+.canvasBlue {
+    background-color: #029acf;
+}
+
+.stopwatch {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 24px;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    font-weight: bold;
+}
+
+.canvasWhite .stopwatch {
+    color: black;
+}
