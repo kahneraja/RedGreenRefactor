@@ -1,3 +1,41 @@
-﻿.glyphicon-big {
-    font-size: 100px;
+﻿html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.ng-scope {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.whiteText
+
+.blueBackground {
+    color: white;
+    background-color:#357ebd;
+}
+
+.redBackground {
+    color: white;
+    background-color:#d43f3a;
+}
+
+.greenBackground {
+    color: white;
+    background-color:#4cae4c;
+}
+
+.btn {
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+.footer .glyphicon {
+    font-size: 19px;
+    display: block;
+    
 }

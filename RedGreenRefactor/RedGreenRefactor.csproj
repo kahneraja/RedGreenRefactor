@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="www\app\app.js" />
+    <Content Include="www\app\controllers\statsCtrl.js" />
+    <Content Include="www\app\controllers\statsCtrl.html" />
     <Content Include="www\app\controllers\redPhaseCtrl.html" />
     <Content Include="www\app\controllers\redPhaseCtrl.js" />
     <Content Include="www\app\controllers\introCtrl.html" />

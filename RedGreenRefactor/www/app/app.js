@@ -14,6 +14,10 @@
             .when('/redPhaseCtrl',
                 { templateUrl: 'app/controllers/redPhaseCtrl.html' })
 
+
+            .when('/statsCtrl',
+                { templateUrl: 'app/controllers/statsCtrl.html' })
+
             .otherwise({ redirectTo: '/' });
     }]);
 
