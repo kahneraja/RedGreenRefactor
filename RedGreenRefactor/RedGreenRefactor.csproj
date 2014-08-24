@@ -69,6 +69,10 @@
     <Content Include="www\lib\fastclick\fastclick.js" />
     <Content Include="www\lib\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="www\lib\jquery\jquery-2.1.1.min.js" />
+    <Content Include="www\lib\nvd\angularjs-nvd3-directives.min.js" />
+    <Content Include="www\lib\nvd\d3.js" />
+    <Content Include="www\lib\nvd\nv.d3.css" />
+    <Content Include="www\lib\nvd\nv.d3.js" />
     <Content Include="www\res\icon\ios\icon-57.png" />
     <Content Include="www\res\icon\ios\icon-72.png" />
     <Content Include="www\splash.png" />

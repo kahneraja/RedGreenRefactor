@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    var app = angular.module("RedGreenRefactor", ['ngRoute']).
+    var app = angular.module("RedGreenRefactor", ['ngRoute', 'nvd3ChartDirectives']).
       run(function () {
           FastClick.attach(document.body);
       });;

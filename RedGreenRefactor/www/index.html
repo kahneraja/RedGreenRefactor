@@ -1,11 +1,13 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<meta charset="utf-8">
 <html ng-app="RedGreenRefactor">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Red Green Refactor</title>
+    <!-- phonegap -->
     <script type="text/javascript" src="phonegap.js"></script>
+
+    <!-- libraries -->
     <script src="lib/jquery/jquery-2.1.1.min.js"></script>
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular/angular-route.min.js"></script>
@@ -14,8 +16,18 @@
     <script src="lib/bootstrap/bootstrap.min.js"></script>
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="app/site.css" />
+
+    <!-- nvd charts -->
+    <script src="lib/nvd/d3.js"></script>
+    <script src="lib/nvd/nv.d3.js"></script>
+    <script src="lib/nvd/angularjs-nvd3-directives.min.js"></script>
+    <link href="lib/nvd/nv.d3.css" rel="stylesheet" />
+
+    <!-- app -->
     <script src="app/app.js"></script>
     <script src="app/controllers/introCtrl.js"></script>
+    <script src="app/controllers/redPhaseCtrl.js"></script>
+    <script src="app/controllers/statsCtrl.js"></script>
     <script src="app/filters/fixedLengthNumber.js"></script>
 </head>
 <body>

@@ -3,7 +3,7 @@
 
     angular.module('RedGreenRefactor').controller('redPhaseCtrl', ['$scope', redPhaseCtrl]);
 
-    function redPhaseCtrl($scope, $timeout) {
+    function redPhaseCtrl($scope) {
 
     }
 
