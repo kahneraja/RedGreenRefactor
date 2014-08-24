@@ -11,8 +11,20 @@
             .when('/',
                 { templateUrl: 'app/controllers/introCtrl.html' })
 
+            .when('/startCtrl',
+                { templateUrl: 'app/controllers/startCtrl.html' })
+
             .when('/redPhaseCtrl',
                 { templateUrl: 'app/controllers/redPhaseCtrl.html' })
+
+            .when('/greenPhaseCtrl',
+                { templateUrl: 'app/controllers/greenPhaseCtrl.html' })
+
+            .when('/bluePhaseCtrl',
+                { templateUrl: 'app/controllers/bluePhaseCtrl.html' })
+
+            .when('/finishCtrl',
+                { templateUrl: 'app/controllers/finishCtrl.html' })
 
 
             .when('/statsCtrl',

@@ -3,6 +3,17 @@
     margin: 0;
 }
 
+a.arrow {
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    color: #333;
+}
+
+a.arrow:hover, a.arrow:focus {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
 .ng-scope {
     height: 100%;
 }
@@ -11,20 +22,20 @@
     height: 100%;
 }
 
-.whiteText
+.whiteFont {
+    color: white;
+}
 
 .blueBackground {
-    color: white;
+
     background-color:#357ebd;
 }
 
 .redBackground {
-    color: white;
     background-color:#d43f3a;
 }
 
 .greenBackground {
-    color: white;
     background-color:#4cae4c;
 }
 
@@ -38,4 +49,18 @@
     font-size: 19px;
     display: block;
     
+}
+
+.glyphicon-medium {
+    font-size: 45px;
+}
+
+.glyphicon-big {
+    font-size: 90px;
+}
+
+.absoluteBottomRight {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
 }

@@ -46,6 +46,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="www\app\app.js" />
+    <Content Include="www\app\controllers\finishCtrl.html" />
+    <Content Include="www\app\controllers\finishCtrl.js" />
+    <Content Include="www\app\controllers\bluePhaseCtrl.html" />
+    <Content Include="www\app\controllers\startCtrl.html" />
+    <Content Include="www\app\controllers\startCtrl.js" />
+    <Content Include="www\app\controllers\bluePhaseCtrl.js" />
+    <Content Include="www\app\controllers\greenPhaseCtrl.html" />
+    <Content Include="www\app\controllers\greenPhaseCtrl.js" />
     <Content Include="www\app\controllers\statsCtrl.js" />
     <Content Include="www\app\controllers\statsCtrl.html" />
     <Content Include="www\app\controllers\redPhaseCtrl.html" />
