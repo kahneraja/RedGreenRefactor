@@ -1,7 +1,17 @@
 (function () {
     'use strict';
-    var app = angular.module("RedGreenRefactor", []).
-      run(function () {
-          FastClick.attach(document.body);
-      });
+    var app = angular.module("RedGreenRefactor", ['ngRoute']);
+
+    app.config(['$routeProvider', function ($routeProvider) {
+        $routeProvider
+
+            .when('/',
+                { templateUrl: 'app/controllers/introCtrl.html' })
+
+            .when('/redPhaseCtrl',
+                { templateUrl: 'app/controllers/redPhaseCtrl.html' })
+
+            .otherwise({ redirectTo: '/' });
+    }]);
+
 }());

@@ -4,50 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Red Green Refactor</title>
     <script type="text/javascript" src="phonegap.js"></script>
-    <script src="./lib/jquery/jquery.min.js"></script>
-    <script src="./lib/angular/angular.js"></script>
-    <script src="./lib/fastclick/fastclick.js"></script>
-    <script src="./lib/bootstrap/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./lib/bootstrap/bootswatch.simplex.css" />
-    <link rel="stylesheet" href="./app/site.css" />
-    <script src="./app/app.js"></script>
-    <script src="./app/controllers/home.js"></script>
-    <script src="./app/filters/fixedLengthNumber.js"></script>
+    <script src="lib/jquery/jquery-2.1.1.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-touch.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/bootstrap/bootswatch.simplex.css" />
+    <link rel="stylesheet" href="app/site.css" />
+    <script src="app/app.js"></script>
+    <script src="app/controllers/introCtrl.js"></script>
+    <script src="app/filters/fixedLengthNumber.js"></script>
 </head>
 <body>
-    <div ng-controller="HomeController" class="maxHeight">
-        <div class="{{canvasClass}} maxHeight" ng-click="next()">
-            <div class="guidancePanel">
-                <div class="guidance" ng-show="canvasClass == 'canvasWhite'">
-                    <h1>Ready? Let's go!</h1>
-                    <p>Each cycle should be very short, at most one hour.</p>
-                </div>
-                <div class="guidance" ng-show="canvasClass == 'canvasRed'">
-                    <h1>What's the next most interesting story?</h1>
-                    <p>Writing a failing unit test.</p>
-                    <p>Imagine how the new code should be called and write the test as if the code already existed. Create the new production code stub. Write just enough code so that it compiles. Run the test. It must fail...</p>
-                </div>
-                <div class="guidance" ng-show="canvasClass == 'canvasGreen'">
-                    <h1>Great! Now let's make that test pass.</h1>
-                    <p>Make that test pass by any means necessary.</p>
-                    <p>Write the minimum amount of production code to make your new test pass. Keep it simple.</p>
-                </div>
-                <div class="guidance" ng-show="canvasClass == 'canvasBlue'">
-                    <h1>Shall we refactor and improve?</h1>
-                    <p>Can we improve?</p>
-                    <p>Remove duplication. Analyse your design. When you're done, ensuring that all tests still pass.</p>
-                </div>
-            </div>
-            <div class="infoPanel">
-                <ul>
-                    <li class="animate-repeat" ng-repeat="time in times">
-                        {{time.period}}
-                    </li>
-                </ul>
-                <span class="stopwatch">{{hours | fixedLengthNumber : 2}}:{{minutes | fixedLengthNumber : 2}}:{{seconds | fixedLengthNumber : 2}}</span>
-            </div>
-        </div>
-    </div>
+    <div ng-view></div>
 </body>
 </html>
