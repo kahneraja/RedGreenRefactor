@@ -3,13 +3,14 @@
     margin: 0;
 }
 
-a.arrow {
+.alphaButton {
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
     color: #333;
+    padding: 10px;
 }
 
-a.arrow:hover, a.arrow:focus {
+.alphaButton:hover, .alphaButton:focus {
     opacity: 0.8;
     filter: alpha(opacity=80); /* For IE8 and earlier */
 }
