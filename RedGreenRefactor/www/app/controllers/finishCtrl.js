@@ -5,7 +5,7 @@
 
     function finishCtrl($scope) {
         $scope.share = function () {
-            window.plugins.socialsharing.share('Message only');
+            window.plugins.socialsharing.share('Yep! Writing better software with @rgrtdd.');
         };
     }
 
