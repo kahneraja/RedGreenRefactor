@@ -43,6 +43,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+    <Folder Include="www\spec\controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="www\app\app.js" />
@@ -61,12 +62,14 @@
     <Content Include="www\app\controllers\introCtrl.html" />
     <Content Include="www\app\controllers\introCtrl.js" />
     <Content Include="www\app\filters\fixedLengthNumber.js" />
-    <Content Include="www\app\services\statisticsSrv.js" />
+    <Content Include="www\app\services\statsService.js" />
     <Content Include="www\app\site.css" />
     <Content Include="www\config.xml" />
     <Content Include="www\icon.png" />
     <Content Include="www\img\logo.png" />
+    <Content Include="www\img\thinking.gif" />
     <Content Include="www\index.html" />
+    <Content Include="www\lib\angular\angular-mocks.js" />
     <Content Include="www\lib\angular\angular-route.min.js" />
     <Content Include="www\lib\angular\angular-touch.min.js" />
     <Content Include="www\lib\angular\angular.min.js" />
@@ -76,6 +79,10 @@
     <Content Include="www\lib\bootstrap\ui-bootstrap-tpls-0.10.0.js" />
     <Content Include="www\lib\fastclick\fastclick.js" />
     <Content Include="www\lib\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="www\lib\jasmine\boot.js" />
+    <Content Include="www\lib\jasmine\jasmine-html.js" />
+    <Content Include="www\lib\jasmine\jasmine.css" />
+    <Content Include="www\lib\jasmine\jasmine.js" />
     <Content Include="www\lib\jquery\jquery-2.1.1.min.js" />
     <Content Include="www\lib\nvd\angularjs-nvd3-directives.min.js" />
     <Content Include="www\lib\nvd\d3.js" />
@@ -83,6 +90,10 @@
     <Content Include="www\lib\nvd\nv.d3.js" />
     <Content Include="www\res\icon\ios\icon-57.png" />
     <Content Include="www\res\icon\ios\icon-72.png" />
+    <Content Include="www\spec\index.html" />
+    <Content Include="www\spec\models\activity_WhenInitialised.js" />
+    <Content Include="www\spec\services\statsService_WhenStoringActivity.js" />
+    <Content Include="www\spec\services\statsService_WhenInitialised.js" />
     <Content Include="www\splash.png" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +108,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="www\lib\jquery\jquery-2.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="www\app\models\activity.js" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

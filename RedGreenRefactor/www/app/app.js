@@ -3,7 +3,9 @@
     var app = angular.module("RedGreenRefactor", ['ngRoute', 'nvd3ChartDirectives']).
       run(function () {
           FastClick.attach(document.body);
-      });;
+          if (window.plugins)
+            window.plugins.insomnia.keepAwake();
+      });
 
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
