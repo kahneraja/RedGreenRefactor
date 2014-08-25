@@ -41,12 +41,6 @@
     background-color:#6a8190;
 }
 
-.btn {
-    border-radius: 0;
-    border: none;
-    border-top: 1px solid lightgray;
-}
-
 .footer .glyphicon {
     font-size: 19px;
     display: block;

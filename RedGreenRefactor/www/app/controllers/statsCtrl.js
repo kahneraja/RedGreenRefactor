@@ -59,7 +59,7 @@
                 bluePercent += diff;
 
             var message = 'Progress! ' + redPercent + '% red, ' + greenPercent + '% green, ' + bluePercent + '% refactor via @rgftdd.';
-            window.plugins.socialsharing.share();
+            window.plugins.socialsharing.share(message);
         };
 
         $scope.init();
