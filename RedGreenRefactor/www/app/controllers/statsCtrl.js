@@ -40,7 +40,7 @@
             if (totalPercent > 0 && totalPercent !== 100)
                 bluePercent += diff;
 
-            $scope.exampleData = [
+            $scope.activityData = [
               { key: "Red", y: redPercent },
               { key: "Green", y: greenPercent },
               { key: "Refactor", y: bluePercent }
