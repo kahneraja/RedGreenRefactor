@@ -7,7 +7,7 @@
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
     color: #333;
-    padding: 10px;
+    padding: 5px;
 }
 
 .alphaButton:hover, .alphaButton:focus {
@@ -21,23 +21,24 @@
 
 .container {
     height: 100%;
+    padding-top: 20px;
 }
 
 .whiteFont {
     color: white;
 }
 
-.blueBackground {
-
-    background-color:#357ebd;
-}
-
 .redBackground {
-    background-color:#d43f3a;
+    background-color:#906a81;
 }
 
 .greenBackground {
-    background-color:#4cae4c;
+    background-color:#6a9079;
+}
+
+.blueBackground {
+
+    background-color:#6a8190;
 }
 
 .btn {
@@ -63,5 +64,10 @@
 .absoluteBottomRight {
     position: absolute;
     bottom: 100px;
-    right: 50px;
+    right: 20px;
+}
+
+.nvdChart {
+    width: 100%;
+    height: 300px;
 }

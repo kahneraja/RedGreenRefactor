@@ -8,7 +8,7 @@
         $scope.exampleData = [
               { key: "Red", y: 5 },
               { key: "Green", y: 2 },
-              { key: "Blue", y: 9 }
+              { key: "Refactor", y: 9 }
         ];
 
         $scope.xFunction = function () {
@@ -23,7 +23,7 @@
             };
         };
 
-        var colorArray = ['#d43f3a', '#4cae4c', '#357ebd'];
+        var colorArray = ['#906a81', '#6a9079', '#6a8190'];
         $scope.colorFunction = function () {
             return function (d, i) {
                 return colorArray[i];
