@@ -1,12 +1,10 @@
 (function () {
     'use strict'
 
-    angular.module('RedGreenRefactor').controller('finishCtrl', ['$scope', finishCtrl]);
+    angular.module('RedGreenRefactor').controller('finishCtrl', ['$scope', 'statsService', finishCtrl]);
 
-    function finishCtrl($scope) {
-        $scope.share = function () {
-            window.plugins.socialsharing.share('Yep! Writing better software with @rgrtdd.');
-        };
+    function finishCtrl($scope, statsService) {
+
     }
 
 }());

@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    describe('Stats Service. When storing activity, ', function () {
+    describe('Stats Service. When Clearing, ', function () {
         var s;
 
         beforeEach(function () {
@@ -13,10 +13,12 @@
             });
         });
 
-        it('should store one activity.', function () {
+        it('should report 0 seconds.', function () {
             var a = createMockActivity();
             s.add(a);
-            expect(s.activities.length).toBe(1);
+            s.clear();
+            var seconds = s.getSeconds();
+            expect(seconds).toBe(0);
         });
 
         function createMockActivity() {

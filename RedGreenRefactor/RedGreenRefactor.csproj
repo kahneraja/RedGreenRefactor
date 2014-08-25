@@ -92,6 +92,8 @@
     <Content Include="www\res\icon\ios\icon-72.png" />
     <Content Include="www\spec\index.html" />
     <Content Include="www\spec\models\activity_WhenInitialised.js" />
+    <Content Include="www\spec\services\statsService_WhenClearing.js" />
+    <Content Include="www\spec\services\statsService_WhenReporting.js" />
     <Content Include="www\spec\services\statsService_WhenStoringActivity.js" />
     <Content Include="www\spec\services\statsService_WhenInitialised.js" />
     <Content Include="www\splash.png" />
