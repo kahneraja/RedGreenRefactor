@@ -56,6 +56,11 @@
     <Content Include="screenshots\640x960\IMG_5908.jpg" />
     <Content Include="screenshots\640x960\IMG_5909.jpg" />
     <Content Include="screenshots\640x960\IMG_5911.jpg" />
+    <Content Include="screenshots\768x1024\IMG_5905.jpg" />
+    <Content Include="screenshots\768x1024\IMG_5907.jpg" />
+    <Content Include="screenshots\768x1024\IMG_5908.jpg" />
+    <Content Include="screenshots\768x1024\IMG_5909.jpg" />
+    <Content Include="screenshots\768x1024\IMG_5911.jpg" />
     <Content Include="www\app\app.js" />
     <Content Include="www\app\controllers\finishCtrl.html" />
     <Content Include="www\app\controllers\finishCtrl.js" />
