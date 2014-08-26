@@ -58,7 +58,7 @@
             if (totalPercent > 0 && totalPercent !== 100)
                 bluePercent += diff;
 
-            var message = 'Progress! ' + redPercent + '% red, ' + greenPercent + '% green, ' + bluePercent + '% refactor via @rgftdd.';
+            var message = 'Progress! ' + redPercent + '% red, ' + greenPercent + '% green, ' + bluePercent + '% refactor with @redgreentdd.';
             window.plugins.socialsharing.share(message);
         };
 
