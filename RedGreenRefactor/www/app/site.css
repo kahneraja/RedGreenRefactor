@@ -19,8 +19,11 @@
     height: 100%;
 }
 
-.container {
+.fullBackground {
     height: 100%;
+}
+
+.container {
     padding-top: 20px;
 }
 
@@ -76,4 +79,13 @@
 
 .modal-dialog {
   padding-top: 15%;
+}
+
+.stopwatch {
+    position: absolute;
+    bottom: 150px;
+    left: 80px;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    color: white;
 }

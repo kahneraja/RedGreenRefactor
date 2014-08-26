@@ -1,23 +1,28 @@
 ﻿<div ng-controller="bluePhaseCtrl">
-    <div class="container blueBackground">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="whiteFont">Refactor</h1>
-                <p class="whiteFont">How can your solution be improved?</p>
-                <p class="whiteFont">Remove duplication. Analyse your design. When you're done, ensuring that all tests still pass.</p>
+    <div class="fullBackground blueBackground">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="whiteFont">Refactor</h1>
+                    <p class="whiteFont">How can your solution be improved?</p>
+                    <p class="whiteFont">Remove duplication. Analyse your design. When you're done, ensuring that all tests still pass.</p>
+                </div>
             </div>
-        </div>
-        <div class="absoluteBottomLeft">
-            <img src="img/thinking.gif" />
-        </div>
-        <div class="absoluteBottomRight">
-            <div class="col-xs-12">
-                <a class="alphaButton" href="#/greenPhaseCtrl">
-                    <span class="whiteFont glyphicon glyphicon-medium glyphicon-circle-arrow-left"></span>
-                </a>
-                <a class="alphaButton" href="#/finishCtrl" ng-click="finish()">
-                    <span class="whiteFont glyphicon glyphicon-big glyphicon-circle-arrow-right"></span>
-                </a>
+            <div class="absoluteBottomLeft">
+                <img src="img/thinking.gif" />
+            </div>
+            <span class="stopwatch">
+                <h2>{{stopwatch.hours | fixedLengthNumber : 2}}:{{stopwatch.minutes | fixedLengthNumber : 2}}:{{stopwatch.seconds | fixedLengthNumber : 2}}</h2>
+            </span>
+            <div class="absoluteBottomRight">
+                <div class="col-xs-12">
+                    <a class="alphaButton" href="#/greenPhaseCtrl">
+                        <span class="whiteFont glyphicon glyphicon-medium glyphicon-circle-arrow-left"></span>
+                    </a>
+                    <a class="alphaButton" href="#/finishCtrl" ng-click="finish()">
+                        <span class="whiteFont glyphicon glyphicon-big glyphicon-circle-arrow-right"></span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

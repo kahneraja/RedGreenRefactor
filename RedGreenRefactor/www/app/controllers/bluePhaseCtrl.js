@@ -1,10 +1,12 @@
 (function () {
     'use strict'
 
-    angular.module('RedGreenRefactor').controller('bluePhaseCtrl', ['$scope', 'statsService', bluePhaseCtrl]);
+    angular.module('RedGreenRefactor').controller('bluePhaseCtrl', ['$scope', 'statsService', 'clockService', bluePhaseCtrl]);
 
-    function bluePhaseCtrl($scope, statsService) {
+    function bluePhaseCtrl($scope, statsService, clockService) {
         $scope.startDate = new Date();
+
+        $scope.stopwatch = clockService.stopwatch;
 
         $scope.finish = function () {
             var endDate = new Date();
